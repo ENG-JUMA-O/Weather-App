@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Modern Weather App | Real-time Forecast</title>
+ <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                🌤️ Weather<span>App</span>
+            </div>
+            <div class="controls">
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Enter city name..." />
+                    <button onclick="searchCity()">Search</button>
+                </div>
+                <button class="location-btn" onclick="getCurrentLocation()">📍 My Location</button>
+                <button class="theme-toggle" onclick="toggleTheme()">🌓 Dark/Light</button>
+            </div>
+        </div>
+
+        <div id="weatherContent">
+            <div class="loading">Loading weather data...</div>
+        </div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
